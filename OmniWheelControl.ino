@@ -39,7 +39,7 @@ void loop(){
   
   // magnitudes less than about 50 are neutral stick positions
   // and should probably just be ignored
-  if(magnitude > 50.0f){  
+  if(magnitude > 75.0f){  
     
     Serial.print("ch1: ");
     Serial.print(ch1);
@@ -95,7 +95,6 @@ void loop(){
     m0.setSpeed(0);
     m1.setSpeed(0);
     m2.setSpeed(0);
-  }
-  delay(500);  
+  }  
 }
 
