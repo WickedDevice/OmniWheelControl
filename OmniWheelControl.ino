@@ -10,7 +10,7 @@ Wicked_DCMotor m2(M3);
 long ch1;
 long ch2;
 
-void setup(){
+void setup() {
   Serial.begin(115200);
   Serial.print("Hello World!");
 
@@ -61,8 +61,8 @@ void loop(){
     float w2 = 0.5*vx + sqrt3o2 * vy; // v dot [1/2, +sqrt(3)/2] / 25mm
    
     boolean w0_ccw = w0 < 0 ? true : false;
-    boolean w1_ccw = w0 < 0 ? true : false;
-    boolean w2_ccw = w0 < 0 ? true : false;
+    boolean w1_ccw = w1 < 0 ? true : false;
+    boolean w2_ccw = w2 < 0 ? true : false;
     byte w0_speed = (byte) map(abs(w0), 0, 600, 0, 255);
     byte w1_speed = (byte) map(abs(w1), 0, 600, 0, 255);
     byte w2_speed = (byte) map(abs(w2), 0, 600, 0, 255);
