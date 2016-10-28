@@ -1,5 +1,5 @@
 #include <math.h>
-#include <Wicked_DCMotor.h>
+#include <WickedMotorShield.h>
 Wicked_DCMotor m0(M1);
 Wicked_DCMotor m1(M2);
 Wicked_DCMotor m2(M3);
