@@ -24,8 +24,8 @@ void setup() {
 
 void loop(){
   //STEP 1: Read in the RC values
-  ch1 = pulseIn(4, HIGH, 25000);
-  ch2 = pulseIn(8, HIGH, 25000);
+  ch1 = pulseIn(RC1, HIGH, 25000);
+  ch2 = pulseIn(RC2, HIGH, 25000);
   
   ch1 = ch1 - 1500; //center it at 0
   ch2 = ch2 - 1500; //for range 1000 - 2000
